@@ -4,12 +4,16 @@
 
 We want to work on https://github.com/udhos/goworkspace-lib
 
-1. Test first:
+1. Test first
+
+Run the app.
 
     $ go run app/main.go 
     lib.Modify("fooBAR") => "FOOBAR"
 
-2. Download module:
+2. Download module
+
+Point workspace to a local copy of the module.
 
     git clone https://github.com/udhos/goworkspace-lib
     go work init goworkspace-lib
@@ -18,11 +22,15 @@ We want to work on https://github.com/udhos/goworkspace-lib
 
     use ./goworkspace-lib
 
-3. Change the module, replacing `ToUpper` with `ToLower`:
+3. Change the module, replacing `ToUpper` with `ToLower`
+
+Edit the function.
 
     vi goworkspace-lib/lib/lib.go
 
-4. Test again:
+4. Test again
+
+Run the app.
 
     $ go run app/main.go 
     lib.Modify("fooBAR") => "foobar"
